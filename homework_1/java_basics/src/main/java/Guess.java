@@ -5,26 +5,26 @@ public class Guess {
     public static void guess() {
         int number = new Random().nextInt(100); // здесь загадывается число от 1 до 99
         int maxAttempts = 10; // здесь задается количество попыток
-        System.out.println("Я загадал число от 1 до 99. У тебя " + maxAttempts + " попыток угадать.");
+        System.out.println("I came up with a number from 1 to 99. You have " + maxAttempts + " attempts to guess.");
         int count = 0;
         try (Scanner scanner = new Scanner(System.in)) {
             while (maxAttempts >= 0) {
-                System.out.println("Введите число: ");
+                System.out.println("Enter the number: ");
                 int n = scanner.nextInt();
                 count++;
                 maxAttempts--;
                 if (n == number) {
-                    System.out.println("Ты угадал с " + count + " попытки");
+                    System.out.println("You guessed right on the " + count + " try");
                     break;
                 }
                 if (n > number) {
-                    System.out.println("Мое число меньше! Осталось " + maxAttempts + " попыток");
+                    System.out.println("My number is less! " + maxAttempts + " attempts left");
                 }
                 if (n < number) {
-                    System.out.println("Мое число больше! Осталось " + maxAttempts + " попыток");
+                    System.out.println("My number is bigger! " + maxAttempts + " attempts left");
                 }
                 if (maxAttempts == 0) {
-                    System.out.println("Ты не угадал");
+                    System.out.println("You did not guess right");
                     break;
                 }
             }
