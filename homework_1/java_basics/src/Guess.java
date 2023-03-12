@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class Guess {
     public static void guess() {
-        int number = new Random().nextInt(100); // здесь загадывается число от 1 до 99
-        int maxAttempts = 10; // здесь задается количество попыток
+        int number = new Random().nextInt(100);
+        int maxAttempts = 10;
         System.out.println("I came up with a number from 1 to 99. You have " + maxAttempts + " attempts to guess.");
         int count = 0;
         try (Scanner scanner = new Scanner(System.in)) {
