@@ -3,11 +3,11 @@ package complex;
 public interface ComplexNumberCalculate {
     double abs(ComplexNumber complexNumber);
 
-    ComplexNumber sum(ComplexNumber... number);
+    ComplexNumber sum(ComplexNumber numberOne, ComplexNumber numberTwo);
 
-    ComplexNumber difference(ComplexNumber... number);
+    ComplexNumber difference(ComplexNumber numberOne, ComplexNumber numberTwo);
 
-    ComplexNumber multiplication(ComplexNumber... number);
+    ComplexNumber multiplication(ComplexNumber numberOne, ComplexNumber numberTwo);
 
-    ComplexNumber division(ComplexNumber... number);
+    ComplexNumber division(ComplexNumber numberOne, ComplexNumber numberTwo);
 }

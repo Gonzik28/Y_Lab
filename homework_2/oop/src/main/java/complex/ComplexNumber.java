@@ -17,16 +17,8 @@ public class ComplexNumber {
         return realNumber;
     }
 
-    public void setRealNumber(double realNumber) {
-        this.realNumber = realNumber;
-    }
-
     public double getImaginaryNumber() {
         return imaginaryNumber;
-    }
-
-    public void setImaginaryNumber(double imaginaryNumber) {
-        this.imaginaryNumber = imaginaryNumber;
     }
 
     @Override
