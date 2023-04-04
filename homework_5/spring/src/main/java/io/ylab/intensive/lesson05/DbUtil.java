@@ -13,12 +13,7 @@ public class DbUtil {
             statement.execute(ddl);
         }
     }
-
-    /*
-     * Настройки подключения НЕ МЕНЯЕМ!
-     * Надо настроить БД таким образом, чтобы она работала со следующими
-     * настройками
-     */
+    
     public static DataSource buildDataSource() throws SQLException {
         PGSimpleDataSource dataSource = new PGSimpleDataSource();
         dataSource.setServerName("localhost");
