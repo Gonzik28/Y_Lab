@@ -13,8 +13,8 @@ public class DbUtil {
             statement.execute(ddl);
         }
     }
-    
-    public static DataSource buildDataSource() throws SQLException {
+
+public static DataSource buildDataSource() throws SQLException {
         PGSimpleDataSource dataSource = new PGSimpleDataSource();
         dataSource.setServerName("localhost");
         dataSource.setUser("postgres");
