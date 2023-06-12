@@ -14,12 +14,7 @@ public class DbUtil {
         }
     }
 
-    /*
-     * Настройки подключения НЕ МЕНЯЕМ!
-     * Надо настроить БД таким образом, чтобы она работала со следующими
-     * настройками
-     */
-    public static DataSource buildDataSource() throws SQLException {
+public static DataSource buildDataSource() throws SQLException {
         PGSimpleDataSource dataSource = new PGSimpleDataSource();
         dataSource.setServerName("localhost");
         dataSource.setUser("postgres");

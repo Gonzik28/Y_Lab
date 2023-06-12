@@ -79,7 +79,8 @@ public class DataProcessor {
                 preparedStatement.executeUpdate();
                 preparedStatement.close();
             } else {
-                System.out.println("An attempt was made to delete, but no data were found");
+
+               System.out.println("An attempt was made to delete, but no data were found");
             }
             preparedStatementAll.close();
             connection.close();
